@@ -6,7 +6,7 @@ body * {
 
 @layer utilities {
     .my-container {
-        @apply w-[90%] mx-auto;
+        @apply w-[85%] mx-auto;
     }
 
     

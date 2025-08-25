@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="my-container mt-8 flex items-center justify-between">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="bg-[#D4D4D41A] h-[100px] flex items-center">
+    <header class="my-container flex items-center justify-between w-full">
       <!-- Logo -->
       <a href="#" class="flex-shrink-0">
-        <img
-          src="../public/assets/logo.png"
-          alt="Youth Academy Logo"
-          class="h-[80px]"
-        />
+        <img src="../public/assets/logo.png" alt="Youth Academy Logo" class="h-[80px]" />
       </a>
 
-      <div
-        class="flex items-center justify-center h-[80px] px-8 flex-1 mx-8"
-        style="
-          background-color: #0d1a49;
-          border-radius: 9999px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        "
-      >
+      <div class="flex items-center justify-center h-[80px] px-8 flex-1 mx-8" style="
+            background-color: #0d1a49;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          ">
         <!-- Navigation -->
         <ul class="flex space-x-8 text-white text-[18px] font-semibold">
           <li>
-            <a href="#" class="hover:text-gray-300"
-              >Why Youth Academy <span class="ml-1">&#9662;</span></a
-            >
+            <a href="#" class="hover:text-gray-300">Why Youth Academy <span class="ml-1">&#9662;</span></a>
           </li>
           <li>
-            <a href="#" class="hover:text-gray-300"
-              >Join us <span class="ml-1">&#9662;</span></a
-            >
+            <a href="#" class="hover:text-gray-300">Join us <span class="ml-1">&#9662;</span></a>
           </li>
           <li><a href="#" class="hover:text-gray-300">Our CEO</a></li>
           <li><a href="#" class="hover:text-gray-300">Academy</a></li>
@@ -45,26 +37,82 @@
 
       <!-- Action Buttons -->
       <div class="flex space-x-4 flex-shrink-0">
-        <button
-          class="px-6 py-3 rounded-full text-[#0d1a49] font-semibold"
-          style="
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          "
-        >
+        <button class="px-6 py-3 rounded-full text-[#0d1a49] font-semibold" style="
+              background-color: white;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            ">
           Take Admission
         </button>
-        <button
-          class="px-6 py-3 rounded-full text-white font-semibold"
-          style="
-            background-color: #0d1a49;
-            border: 2px solid white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          "
-        >
+        <button class="px-6 py-3 rounded-full text-white font-semibold" style="
+              background-color: #0d1a49;
+              border: 2px solid white;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            ">
           Register Now
         </button>
       </div>
     </header>
-  </body>
+  </div>
+
+  <!-- home-page-sections -->
+  <div class="relative">
+    <!-- Background Image -->
+    <img class="h-[730px]  w-full object-cover" src="../public/assets/dotted-image.JPG" alt="Background" />
+
+    <!-- Overlay Grid -->
+
+    <!-- Overlay Grid -->
+    <div class="absolute inset-0 grid grid-cols-1 md:grid-cols-2  p-28
+    ">
+      <!-- Left Side (Text) -->
+      <div class="my-container text-black">
+        <h1 class="text-[64px] font-[800] leading-tight">
+          up your skills <br class="hidden md:block" />
+          to advance your <br class="hidden md:block" />
+          career path
+        </h1>
+        <p class="text-lg md:text-xl max-w-md mt-6">
+          Unlock your potential with our comprehensive educational platform—designed to inspire, engage, and equip
+          learners with the skills and knowledge needed to thrive in an ever-changing world.
+        </p>
+        <button class="mt-6 h-[48px] w-[180px] rounded-lg bg-white text-black 
+        flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition">
+          Get Started
+          <span>
+            <img src="../public/assets/arrow-image.png" alt="" class="h-[24px] w-[24px]" />
+          </span>
+        </button>
+
+
+      </div>
+
+      <!-- Right Side (Image) -->
+      <div class="flex justify-center">
+        <img src="../public/assets/girl-image.png" alt="Right Side Image"
+          class="w-[300px] md:w-[509px] md:h-[521px] object-contain" />
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- popular-courses-section -->
+ <div>
+  <div>
+    <h1 class="text-[48px] font-[600] text-center my-12">
+      Popular Courses
+    </h1>
+    <div class="flex flex-wrap justify-center gap-4 my-8">
+      <button class="px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-md hover:bg-gray-100 transition">9th Class</button>
+      <button class="px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-md hover:bg-gray-100 transition">10th Class</button>
+      <button class="px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-md hover:bg-gray-100 transition">FSc (Pre-Eng) (Part-I)</button>
+      <button class="px-6 py-3 rounded-xl bg-[#0d1a49] text-white font-semibold shadow-md hover:bg-[#0d1a49]/90 transition">FSc (Pre-Eng) (Part-II)</button>
+      <button class="px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-md hover:bg-gray-100 transition">FSc (Pre-Med) (Part-I)</button>
+      <button class="px-6 py-3 rounded-xl bg-white text-black font-semibold shadow-md hover:bg-gray-100 transition">FSc (Pre-Med) (Part-II)</button>
+    </div>
+  </div>
+</div>
+
+</body>
+
 </html>
