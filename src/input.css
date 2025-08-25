@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+body * {
+    font-family: 'Poppins', sans-serif;
+}
+
+@layer utilities {
+    .my-container {
+        @apply w-[90%] mx-auto;
+    }
+
+    
+}
+
+.nav-item {
+    position: relative;
+    list-style: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Tooltip Styles - Added border here */
+.tooltip {
+    position: absolute;
+    top: 150%;
+    right: -23px;
+    transform: translateY(10px);
+    background: #F6FDFF;
+    border-radius: 5px;
+    padding: 4px 0;
+    width: 220px;
+    min-width: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border: 1px solid #1960A9;
+    /* Soft blue-gray border */
+}
+
+/* Tooltip Arrow - now matches border color */
+.tooltip::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    transform: translateX(0);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #1960A9;
+    /* Same as tooltip border */
+}
+
+/* Inner white fill for arrow to match tooltip background */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    transform: translateX(0);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    z-index: 1;
+}
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.tooltip-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #374151;
+    transition: background-color 0.2s ease;
+
+}
+
+.tooltip-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+    background-color: #f1f5f9;
+}
+
+.tooltip-text {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.fa-chevron-down {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
