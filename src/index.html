@@ -448,8 +448,17 @@
     </div>
 
     <!-- best-team -->
-    <div>
-      <div class="my-container">
+    <div class="relative">
+      <!-- bg-image -->
+       <div class="absolute top-[120px] left-[65px] z-0">
+        <img src="../public/assets/ring-image-1.png" alt="">
+       </div>
+       <div class="absolute bottom-[-100px] right-[40px] z-0">
+        <img
+        class="h-[200px]"
+        src="../public/assets/ring-image-2.png" alt="">
+       </div>
+      <div class="my-container ">
         <div class=" flex items-center justify-center mt-6 gap-2">
           <h2 class="text-[48px] font-[400] ">MEET OUR</h2>
           <span class="text-[48px] font-[700]">BEST TEAM</span>
@@ -459,7 +468,7 @@
         </p>
         <!-- grid-section -->
          <div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center mt-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center mt-8">
             <!-- team card 1 -->
             <div class="w-[350px]">
               <div class="bg-gradient-to-b from-[#071952] to-[#555B71]  p-6">
@@ -477,7 +486,7 @@
             <div class="w-[350px]">
               <div class="bg-gradient-to-b from-[#071952] to-[#555B71]  p-6">
                 <div class="bg-white h-[300px] flex items-end justify-center">
-                  <img src="../public/assets/girl-image.png" alt="team member" class="h-[280px] object-contain" />
+                  <img src="../public/assets/person-image.png" alt="team member" class="h-[280px] object-contain" />
                 </div>
                 <div class="text-center text-white pt-4 pb-2">
                   <h3 class="text-[22px] md:text-[24px] font-[700]">Affan Ghani</h3>
@@ -487,10 +496,10 @@
             </div>
 
             <!-- team card 3 -->
-            <div class="w-[350px]">
+            <div class="w-[350px] relative z-10">
               <div class="bg-gradient-to-b from-[#071952] to-[#555B71]  p-6">
                 <div class="bg-white h-[300px] flex items-end justify-center">
-                  <img src="../public/assets/girl-image.png" alt="team member" class="h-[280px] object-contain" />
+                  <img src="../public/assets/person-image.png" alt="team member" class="h-[280px] object-contain" />
                 </div>
                 <div class="text-center text-white pt-4 pb-2">
                   <h3 class="text-[22px] md:text-[24px] font-[700]">Affan Ghani</h3>
@@ -502,6 +511,18 @@
          </div>
       </div>
     </div>
+
+    <!-- about-section -->
+     <div>
+      <div class="bg-gradient-to-b from-[#071952] to-[#666B78] w-full h-[646px] mt-40">
+        <div class="grid grid-cols-2 border-2 border-black h-[640px]">
+          <!-- left-grid -->
+           <div class="border-2 border-black">1</div>
+           <!-- right-grid -->
+            <div class="border-2 border-black">2</div>
+        </div>
+      </div>
+     </div>
   </body>
   <script>
     (function () {
