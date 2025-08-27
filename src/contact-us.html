@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bg-image -->
+    <div class="relative">
+        <!-- Background Image -->
+        <img class="h-[740px] w-full object-cover" src="../public/assets/contact-us-image.jpeg" alt="" />
+
+        <!-- Content Wrapper -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+            <h2 class="text-[48px] font-[700] text-white mb-4">
+                Feel free to get in touch
+            </h2>
+            <p class="text-white text-[18px] max-w-3xl">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to
+                make a type specimen book
+            </p>
+            <h2 class="text-[32px] font-[700] text-white mt-40">
+                Any question or remarks? Just write us a message!
+            </h2>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div class="relative z-10 -mt-32 px-4"> <!-- -mt-32 overlap ke liye -->
+        <div class="flex justify-center items-center">
+            <div class="bg-white rounded-lg border border-gray-300 shadow-lg w-full max-w-[1196px] h-auto p-2 relative">
+                <!-- form content yaha aayega -->
+                <div class="grid grid-cols-12  h-[600px]">
+                    <!-- left -->
+                    <div class="col-span-4  bg-[#0F1A3D] rounded-lg relative overflow-hidden">
+                        <div class="p-8 relative z-10">
+                            <h2 class="text-white text-[28px] font-[600]">
+                                Get In Touch
+                            </h2>
+                            <p class="text-[18px] font-[400] text-[#C9C9C9]">
+                                Say something to start a live chat!
+                            </p>
+
+                            <!-- Contact Info -->
+                            <div class="mt-10 space-y-8">
+                                <div class="flex items-center space-x-4">
+                                    <img src="../public/assets/call-image.png" alt="Phone Icon" class="h-6 w-6" />
+                                    <span class="text-white text-[16px] font-[500]">+92 300xxxxxxx</span>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <img src="../public/assets/icon.png" alt="Email Icon" class="h-6 w-6" />
+                                    <span class="text-white text-[16px] font-[500]">demo@gmail.com</span>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <img src="../public/assets/icon.png" alt="Location Icon" class="h-6 w-6" />
+                                    <span class="text-white text-[16px] font-[500]">
+                                        132 XYZ Street ABC, City Pakistan
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Circle image (only partial visible) -->
+                        <img src="../public/assets/circle.png" alt="circle"
+                            class="absolute -bottom-10 -right-10 w-[200px] opacity-80" />
+                    </div>
+
+                    <!-- right -->
+                    <div class="col-span-8 p-8 relative overflow-hidden">
+                        <!-- Background Arrow Image -->
+                        <img src="../public/assets/arrow.png" alt="Arrow"
+                            class="absolute inset-0 m-auto w-[250px] opacity-10 pointer-events-none" />
+
+                        <div class="relative z-10">
+                            <div class="grid grid-cols-2 gap-x-8 gap-y-6">
+                                <!-- First Name -->
+                                <div>
+                                    <label for="first-name" class="block text-lg font-medium text-gray-700">First
+                                        Name</label>
+                                    <input type="text" id="first-name"
+                                        class="mt-1 block w-full border-b border-gray-300 focus:outline-none focus:border-indigo-500" />
+                                </div>
+                                <!-- Last Name -->
+                                <div>
+                                    <label for="last-name" class="block text-lg font-medium text-gray-700">Last
+                                        Name</label>
+                                    <input type="text" id="last-name" value="Usama"
+                                        class="mt-1 block w-full border-b border-gray-300 focus:outline-none focus:border-indigo-500" />
+                                </div>
+                                <!-- Email -->
+                                <div>
+                                    <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                                    <input type="email" id="email"
+                                        class="mt-1 block w-full border-b border-gray-300 focus:outline-none focus:border-indigo-500" />
+                                </div>
+                                <!-- Phone Number -->
+                                <div>
+                                    <label for="phone-number" class="block text-lg font-medium text-gray-700">Phone
+                                        Number</label>
+                                    <input type="text" id="phone-number" value="+92 3001234567"
+                                        class="mt-1 block w-full border-b border-gray-300 focus:outline-none focus:border-indigo-500" />
+                                </div>
+                            </div>
+
+                            <!-- Select Subject -->
+                            <div class="mt-8">
+                                <h3 class="text-lg font-medium text-gray-700">Select Subject?</h3>
+                                <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" class="form-radio h-5 w-5 text-indigo-600" name="subject"
+                                            value="general-inquiry" checked />
+                                        <span class="ml-2 text-gray-700">General Inquiry</span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" class="form-radio h-5 w-5 text-gray-300" name="subject"
+                                            value="general-inquiry2" />
+                                        <span class="ml-2 text-gray-700">General Inquiry</span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" class="form-radio h-5 w-5 text-gray-300" name="subject"
+                                            value="general-inquiry3" />
+                                        <span class="ml-2 text-gray-700">General Inquiry</span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" class="form-radio h-5 w-5 text-gray-300" name="subject"
+                                            value="general-inquiry4" />
+                                        <span class="ml-2 text-gray-700">General Inquiry</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mt-8">
+                                <label for="message" class="block text-[12px] font-bold text-black">Message</label>
+                                <textarea id="message" rows="4"
+                                    class="mt-1 block w-full border-b border-gray-300 focus:outline-none focus:border-indigo-500 resize-none"
+                                    placeholder="Write your message.."></textarea>
+                            </div>
+
+                            <!-- Send Message Button -->
+                            <div class="mt-8 flex justify-end">
+                                <button
+                                    class="px-8 py-3 rounded-md bg-[#0F1A3D] text-white font-semibold shadow-md hover:bg-[#0F1A3D]/90">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../public/assets/letter.png" alt="" class="absolute bottom-[-70px] right-[140px]  z-0" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
